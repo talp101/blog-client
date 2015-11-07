@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="blogger">
+  <head>
+    <title>Blogger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="stylesheets/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <div id="content" class="container" ui-view></div>
+
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/materialize.min.js"></script>
+    <script src="vendor/angular.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
+    <script src="vendor/lodash.min.js"></script>
+    <script src="vendor/restangular.min.js"></script>
+    <script src="vendor/angular-jwt.min.js"></script>
+    <script src="js/blogger.module.js"></script>
+    <script src="js/config/blogger.config.js"></script>
+    <script src="js/config/blogger.routes.js"></script>
+    <script src="js/navbar/navbar.controller.js"></script>
+    <script src="js/navbar/navbar.directive.js"></script>
+    <script src="js/login/login.controller.js"></script>
+    <script src="js/blog/blog.data.js"></script>
+    <script src="js/blog/blog.controller.js"></script>
+    <script src="js/post/postItem.directive.js"></script>
+    <script src="js/post/post.data.js"></script>
+    <script src="js/post/post.controller.js"></script>
+
+  </body>
+</html>
