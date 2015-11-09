@@ -13,11 +13,11 @@
             <a>{{vm.blog.timestamp}}</a>
         </div>
     </div>
-    <div ng-repeat="post in vm.posts">
+    <div ng-repeat="post in vm.posts | orderBy:post.title|limitTo:1">
         <post-item id="post.id" title="post.title"></post-item>
     </div>
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-        <a class="btn-floating btn-large red waves-effect" ui-sref="">
+        <a class="btn-floating btn-large red waves-effect">
             <i class="large material-icons">add</i>
         </a>
     </div>
